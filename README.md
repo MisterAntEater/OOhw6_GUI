@@ -1,3 +1,6 @@
+# Author
+Gabriel Comer, 1001069520
+
 # OOhw6_GUI
 GUI version of Robbie Robot Shop.
 
