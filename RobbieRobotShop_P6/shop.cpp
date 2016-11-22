@@ -40,6 +40,7 @@ void Shop::create_arm(string name, string part_number, double weight,
            double cost, int max_power_consumed, string description) {
     _arms.push_back(Arm{name, part_number, weight, 
            cost, max_power_consumed, description});
+	Shop::num_arms++;
 }
 vector<Arm> Shop::arms() const {return _arms;}
 
@@ -47,6 +48,7 @@ void Shop::create_battery(string name, string part_number, double weight,
            double cost, int max_energy_stored, string description) {
     _batteries.push_back(Battery{name, part_number, weight, 
            cost, max_energy_stored, description});
+	Shop::num_bats++;
 }
 vector<Battery> Shop::batteries() const {return _batteries;}
 
@@ -54,6 +56,7 @@ void Shop::create_head(string name, string part_number, double weight,
            double cost, string description) {
     _heads.push_back(Head{name, part_number, weight, 
            cost, description});
+	Shop::num_heads++;
 }
 vector<Head> Shop::heads() const {return _heads;}
 
@@ -61,6 +64,7 @@ void Shop::create_locomotor(string name, string part_number, double weight,
            double cost, int max_power_consumed, int max_speed_possible, string description) {
     _locomotors.push_back(Locomotor{name, part_number, weight, 
            cost, max_power_consumed, max_speed_possible, description});
+	Shop::num_legs++;
 }
 vector<Locomotor> Shop::locomotors() const {return _locomotors;}
 
@@ -68,6 +72,7 @@ void Shop::create_torso(string name, string part_number, double weight,
            double cost, int max_battery_slots, string description) {
     _torsos.push_back(Torso{name, part_number, weight, 
            cost, max_battery_slots, description});
+	Shop::num_torsos++;
 }
 vector<Torso> Shop::torsos() const {return _torsos;}
 

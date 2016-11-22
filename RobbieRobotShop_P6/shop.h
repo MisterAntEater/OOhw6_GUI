@@ -48,6 +48,13 @@ using namespace std;
 
 class Shop {
     public:
+
+		int num_heads=0;
+		int num_torsos=0;
+		int num_bats=0;
+		int num_arms=0;
+		int num_legs=0;
+
         Shop(string name) : _name{name} { }
               
         //

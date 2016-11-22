@@ -46,6 +46,8 @@
 #include <FL/Fl_Button.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Choice.H>
+#include <FL/Fl_Input.H>
+#include <FL/Fl_Scroll.H>
 
 using namespace std;
 
@@ -84,12 +86,9 @@ class Controller {
 	static void but_makemodel_cb(Fl_Widget* o, void* shop);
 	static void but_viewparts_cb(Fl_Widget* o, void* shop);
 	static void but_viewmodels_cb(Fl_Widget* o, void* shop);
-	static void but_viewcustomers_cb(Fl_Widget* o, void* shop);
-	static void but_viewassociates_cb(Fl_Widget* o, void* shop);
-	static void but_addcustomer_cb(Fl_Widget* o, void* shop);
-	static void but_addassociate_cb(Fl_Widget* o, void* shop);
-	static void but_createorder_cb(Fl_Widget* o, void* shop);
-	static void but_vieworders_cb(Fl_Widget* o, void* shop);
+
+	static void but_finishpart_cb(Fl_Widget* o, void* shop);
+	static void but_finishmodel_cb(Fl_Widget* o, void* shop);
 
 	static void mm_cb(Fl_Widget* o, void* shop);
   private:
